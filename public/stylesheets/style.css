@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: "Story Script", sans-serif;
+    font-size: 130px;
+    width: 100%;
+    border: 3px solid blueviolet;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+
+}
+
+nav ul li a.activo {
+    background-color: rgb(225, 197, 245);
+}
