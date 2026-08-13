@@ -5,17 +5,17 @@
             <form action="/admin/novedades/modificar" method="post">
                 <input type="hidden" value="{{novedad.id}}" name="id">
                 <div class="mb-3 row">
-                    <label for="">Titulo</label>
-                    <input type="text" class="form-control" name="titulo" value="{{novedad.titulo}}">
+                    <label for="">Servicios</label>
+                    <input type="text" class="form-control" name="servicios" value="{{novedad.servicios}}">
                 </div>
                 <div class="mb-3 row">
-                    <label for="">Subtitulo</label>
-                    <input type="text" class="form-control" name="subtitulo" value="{{novedad.subtitulo}}">
+                    <label for="">Precio Argentina</label>
+                    <input type="text" class="form-control" name="precioargentina" value="{{novedad.precioargentina}}">
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="">Cuerpo</label>
-                    <textarea name="cuerpo" class="form-control">{{novedad.cuerpo}}</textarea>
+                    <label for="">Precio Internacional</label>
+                    <textarea name="preciointernacional" class="form-control">{{novedad.preciointernacional}}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Modificar</button>
             </form>

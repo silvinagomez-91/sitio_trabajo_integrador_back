@@ -20,7 +20,7 @@ router.get('/agregar', (req, res, next) => {
 
 router.post('/agregar', async (req, res, next) => {
     try {
-        if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
+        if (req.body.servicios != "" && req.body.precioargentina != "" && req.body.preciointernacional != "") {
             await novedadesModel.insertNovedad(req.body);
             res.redirect('/admin/novedades')
         } else {
@@ -65,9 +65,9 @@ router.post('/modificar', async (req, res, next) => {
     try {
 
         var obj = {
-            titulo: req.body.titulo,
-            subtitulo: req.body.subtitulo,
-            cuerpo: req.body.cuerpo
+            titulo: req.body.servicios,
+            subtitulo: req.body.precioargentina,
+            cuerpo: req.body.preciointernacional
         }
         
 
