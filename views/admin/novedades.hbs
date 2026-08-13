@@ -1,12 +1,11 @@
 <div class="container" style="margin-top: 50px;">
-    {{!-- fila 1 --}}
+   
     <div class="row">
         <p class="text-end">Hola {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesión <i
                     class="fas fa-sign-out-alt"></i></a></p>
     </div>
 
 
-    {{!-- fila 2 --}}
 
     <div class="row">
         <div class="col-7">
@@ -23,7 +22,7 @@
                 <thead>
                     <tr class="table-dark">
                         <th scope="col">#</th>
-                        <th scope="col">servicios</th>
+                        <th scope="col">Servicio</th>
                         <th class="text-end">Acciones</th>
                     </tr>
                 </thead>
@@ -32,7 +31,7 @@
                     {{#each novedades}}
                     <tr>
                         <th scope="row">{{id}}</th>
-                        <td>{{titulo}}</td>
+                        <td>{{servicios}}</td>
                         <td class="text-end">
                             <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}">Modificar<i class="fa fa-pencil" aria-hidden="true"></i></a>
                             <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true">Borrar</i></a>
