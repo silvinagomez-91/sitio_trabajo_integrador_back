@@ -4,7 +4,7 @@ var novedadesModel = require('./../models/novedadesModel');
 var nodemailer = require('nodemailer');
 
 router.get('/novedades', async function (req, res, next) {
-    let novedades = await novedades.Model.getNovedades();
+    let novedades = await novedadesModel.getNovedades();
 
     res.json(novedades);
 });
